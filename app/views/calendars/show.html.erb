@@ -1,5 +1,7 @@
 <h2><%= @query.new_record? ? l(:label_calendar) : @query.name %></h2>
 
+<h3>test</h3>
+
 <%= form_tag({:controller => 'calendars', :action => 'show', :project_id => @project},
              :method => :get, :id => 'query_form') do %>
 <%= hidden_field_tag 'set_filter', '1' %>
